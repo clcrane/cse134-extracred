@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Carolyn's personal portfolio featuring projects, skills, education, and experience."
+    >
+
     <title>Home | Carolyn's Portfolio</title>
 
     <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
 
-    <style>
-    </style>
-
-    <script>
-    </script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -27,10 +30,14 @@
             <a href="contact.html">Contact</a>
             <a href="experiments.html">Experiments</a>
         </nav>
+
+        <button id="theme-toggle" type="button">
+            Switch Theme
+        </button>
     </header>
 
     <main>
-        <section>
+        <section class="welcome">
             <h2>Welcome</h2>
 
             <p>
@@ -40,16 +47,16 @@
             </p>
         </section>
 
-        <section>
+        <section class="explore">
             <h2>Explore My Portfolio</h2>
 
-            <div>
+            <div class="explore-card">
                 <h3>Learn More About Me</h3>
 
                 <p>
                     Visit the <span>About Me</span> page to learn more about my
-                    education, interests, and technical skills.<br>
-                    You can also view my projects, resume, and contact information.
+                education, interests, and technical skills.<br>
+                You can also view my projects, resume, and contact information.
                 </p>
 
                 <form action="projects.html">

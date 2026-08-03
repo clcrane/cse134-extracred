@@ -1,0 +1,171 @@
+:root {
+    --cream: #f4ede4;
+    --sand: #d8c3a5;
+    --sage: #8a9a5b;
+    --terracotta: #b86f52;
+    --brown: #5c4033;
+    --dark-brown: #33251f;
+    --white: #fffaf5;
+
+    --border-radius: 12px;
+    --shadow: 0 4px 12px rgba(51, 37, 31, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--cream);
+    color: var(--dark-brown);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--sage);
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--sand);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+h2,
+h3 {
+    color: var(--brown);
+}
+
+button {
+    background-color: var(--terracotta);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--brown);
+    outline: 3px solid var(--sage);
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.welcome {
+    background-color: var(--sand);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.explore {
+    background-color: var(--white);
+}
+
+.explore-card {
+    background-color: var(--cream);
+    border-left: 6px solid var(--sage);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+.explore-card h3 {
+    margin-top: 0;
+}
+
+.explore-card span {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+#theme-toggle {
+    margin-top: 1rem;
+}
+
+.light-theme {
+    --cream: #ffffff;
+    --sand: #eeeeee;
+    --sage: #6f7f72;
+    --terracotta: #8b6f61;
+    --brown: #444444;
+    --dark-brown: #222222;
+    --white: #ffffff;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+}
